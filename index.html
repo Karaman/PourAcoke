@@ -12,7 +12,10 @@
   <body>
     <div id="unityContainer" style="display: table; width: 720px; height: 1080px;"></div>
 	<script>
-		document.getElementById("unityContainer").style.width = "100%";
+		var myWidth = document.innerWidth; 
+		var myHeight = document.innerHeight; 
+		document.getElementById("unityContainer").style.width = myWidth + "px";
+		document.getElementById("unityContainer").style.height = myHeight + "px";
 	</script>
   </body>
 </html>
